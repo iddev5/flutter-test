@@ -59,7 +59,7 @@ jobs:
       # Checkout gallery code, recreate missing files, and get packages.
       - name: Checkout code
         uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
-      - run: flutter create .
+      #- run: flutter create .
       - run: flutter pub get
 
       # Build the application.
