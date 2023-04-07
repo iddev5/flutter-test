@@ -23,7 +23,7 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
         env:
-          GITHUB_TOKEN: ${{ secrets.FLUTTERGALLERYRELEASEBOT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         with:
           tag_name: ${{ github.event.inputs.version }}
           draft: true
